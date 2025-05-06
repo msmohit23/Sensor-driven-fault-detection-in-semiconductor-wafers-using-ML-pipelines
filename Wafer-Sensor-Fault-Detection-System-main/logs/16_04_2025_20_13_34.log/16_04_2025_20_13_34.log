@@ -1,0 +1,12 @@
+[2025-04-16 20:13:36,385] 97 werkzeug - WARNING -  * Debugger is active!
+[2025-04-16 20:13:36,389] 97 werkzeug - INFO -  * Debugger PIN: 687-007-829
+[2025-04-16 20:13:49,331] 97 werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 20:13:49] "GET / HTTP/1.1" 200 -
+[2025-04-16 20:13:49,420] 97 werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 20:13:49] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+[2025-04-16 20:13:57,766] 74 root - INFO - predictions completed. 
+[2025-04-16 20:13:57,767] 21 root - INFO - Prediction completed. Downloading prediction file.
+[2025-04-16 20:13:57,810] 97 werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 20:13:57] "POST /predict HTTP/1.1" 200 -
+[2025-04-16 20:15:19,229] 97 werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 20:15:19] "GET / HTTP/1.1" 200 -
+[2025-04-16 20:15:19,310] 97 werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 20:15:19] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+[2025-04-16 20:15:32,604] 74 root - INFO - predictions completed. 
+[2025-04-16 20:15:32,606] 21 root - INFO - Prediction completed. Downloading prediction file.
+[2025-04-16 20:15:32,626] 97 werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 20:15:32] "POST /predict HTTP/1.1" 200 -

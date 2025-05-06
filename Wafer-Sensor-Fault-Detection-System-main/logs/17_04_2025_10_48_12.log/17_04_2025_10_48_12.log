@@ -1,0 +1,108 @@
+[2025-04-17 10:48:13,845] 97 werkzeug - WARNING -  * Debugger is active!
+[2025-04-17 10:48:13,850] 97 werkzeug - INFO -  * Debugger PIN: 687-007-829
+[2025-04-17 10:48:26,213] 97 werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 10:48:26] "GET / HTTP/1.1" 200 -
+[2025-04-17 10:48:26,353] 97 werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 10:48:26] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+[2025-04-17 10:48:55,663] 97 werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 10:48:55] "GET / HTTP/1.1" 200 -
+[2025-04-17 10:48:56,031] 97 werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 10:48:56] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+[2025-04-17 10:48:57,091] 97 werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 10:48:57] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-04-17 10:50:36,278] 74 root - INFO - predictions completed. 
+[2025-04-17 10:50:36,390] 97 werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 10:50:36] "POST /predict HTTP/1.1" 200 -
+[2025-04-17 10:51:23,663] 97 werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 10:51:23] "GET /download_results HTTP/1.1" 200 -
+[2025-04-17 10:53:03,310] 97 werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 10:53:03] "GET /predict HTTP/1.1" 200 -
+[2025-04-17 10:53:03,353] 97 werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 10:53:03] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+[2025-04-17 10:53:03,356] 97 werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 10:53:03] "[33mGET /script.js HTTP/1.1[0m" 404 -
+[2025-04-17 10:53:19,648] 97 werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 10:53:19] "GET / HTTP/1.1" 200 -
+[2025-04-17 10:53:19,689] 97 werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 10:53:19] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+[2025-04-17 10:53:30,178] 74 root - INFO - predictions completed. 
+[2025-04-17 10:53:30,249] 97 werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 10:53:30] "POST /predict HTTP/1.1" 200 -
+[2025-04-17 10:55:21,181] 97 werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 10:55:21] "GET / HTTP/1.1" 200 -
+[2025-04-17 10:55:21,236] 97 werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 10:55:21] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+[2025-04-17 10:55:37,449] 56 root - INFO - Error occur in prediction pipeline predicts
+[2025-04-17 10:55:37,449] 76 root - INFO - Error occur in prediction pipeline get prediction dataframe
+[2025-04-17 10:55:37,449] 84 root - ERROR - An error occurred during prediction.
+Traceback (most recent call last):
+  File "C:\Users\ma230\Desktop\Wafer-Sensor-Fault-Detection-System-main\src\pipelines\prediction_pipeline.py", line 50, in predict
+    X_transfrom = preprocessor.transform(features)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ma230\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\pipeline.py", line 903, in transform
+    Xt = transform.transform(Xt, **routed_params[name].transform)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ma230\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\utils\_set_output.py", line 313, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ma230\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\impute\_knn.py", line 266, in transform
+    X = self._validate_data(
+        ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ma230\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\base.py", line 608, in _validate_data
+    self._check_feature_names(X, reset=reset)
+  File "C:\Users\ma230\AppData\Local\Programs\Python\Python311\Lib\site-packages\sklearn\base.py", line 535, in _check_feature_names
+    raise ValueError(message)
+ValueError: The feature names should match those that were passed during fit.
+Feature names unseen at fit time:
+- Good/Bad
+- Sensor-14
+- Sensor-142
+- Sensor-150
+- Sensor-158
+- ...
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ma230\Desktop\Wafer-Sensor-Fault-Detection-System-main\src\pipelines\prediction_pipeline.py", line 66, in get_prediction_dataframe
+    predictions = self.predict(input_df)
+                  ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ma230\Desktop\Wafer-Sensor-Fault-Detection-System-main\src\pipelines\prediction_pipeline.py", line 57, in predict
+    raise CustomException(e,sys)
+src.exception.CustomException: Error occured in python script [C:\Users\ma230\Desktop\Wafer-Sensor-Fault-Detection-System-main\src\pipelines\prediction_pipeline.py] line number [50] error message[The feature names should match those that were passed during fit.
+Feature names unseen at fit time:
+- Good/Bad
+- Sensor-14
+- Sensor-142
+- Sensor-150
+- Sensor-158
+- ...
+]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ma230\Desktop\Wafer-Sensor-Fault-Detection-System-main\src\pipelines\prediction_pipeline.py", line 82, in run_pipeline
+    self.get_prediction_dataframe(input_csv_path)
+  File "C:\Users\ma230\Desktop\Wafer-Sensor-Fault-Detection-System-main\src\pipelines\prediction_pipeline.py", line 77, in get_prediction_dataframe
+    raise CustomException(e,sys)
+src.exception.CustomException: Error occured in python script [C:\Users\ma230\Desktop\Wafer-Sensor-Fault-Detection-System-main\src\pipelines\prediction_pipeline.py] line number [66] error message[Error occured in python script [C:\Users\ma230\Desktop\Wafer-Sensor-Fault-Detection-System-main\src\pipelines\prediction_pipeline.py] line number [50] error message[The feature names should match those that were passed during fit.
+Feature names unseen at fit time:
+- Good/Bad
+- Sensor-14
+- Sensor-142
+- Sensor-150
+- Sensor-158
+- ...
+]]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ma230\Desktop\Wafer-Sensor-Fault-Detection-System-main\application.py", line 30, in upload
+    prediction_file_detail = pipeline.run_pipeline()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ma230\Desktop\Wafer-Sensor-Fault-Detection-System-main\src\pipelines\prediction_pipeline.py", line 88, in run_pipeline
+    raise CustomException(e,sys)
+src.exception.CustomException: Error occured in python script [C:\Users\ma230\Desktop\Wafer-Sensor-Fault-Detection-System-main\src\pipelines\prediction_pipeline.py] line number [82] error message[Error occured in python script [C:\Users\ma230\Desktop\Wafer-Sensor-Fault-Detection-System-main\src\pipelines\prediction_pipeline.py] line number [66] error message[Error occured in python script [C:\Users\ma230\Desktop\Wafer-Sensor-Fault-Detection-System-main\src\pipelines\prediction_pipeline.py] line number [50] error message[The feature names should match those that were passed during fit.
+Feature names unseen at fit time:
+- Good/Bad
+- Sensor-14
+- Sensor-142
+- Sensor-150
+- Sensor-158
+- ...
+]]]
+[2025-04-17 10:55:37,712] 97 werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 10:55:37] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+[2025-04-17 10:55:37,788] 97 werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 10:55:37] "GET /predict?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+[2025-04-17 10:55:37,816] 97 werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 10:55:37] "GET /predict?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+[2025-04-17 10:55:37,908] 97 werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 10:55:37] "GET /predict?__debugger__=yes&cmd=resource&f=console.png&s=ApBnUbVx2wmnH4BByhiW HTTP/1.1" 200 -
+[2025-04-17 10:55:38,018] 97 werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 10:55:38] "GET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[2025-04-17 10:56:05,798] 74 root - INFO - predictions completed. 
+[2025-04-17 10:56:05,854] 97 werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 10:56:05] "POST /predict HTTP/1.1" 200 -

@@ -1,0 +1,12 @@
+[2025-04-16 20:18:07,590] 97 werkzeug - WARNING -  * Debugger is active!
+[2025-04-16 20:18:07,595] 97 werkzeug - INFO -  * Debugger PIN: 687-007-829
+[2025-04-16 20:18:20,913] 97 werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 20:18:20] "GET / HTTP/1.1" 200 -
+[2025-04-16 20:18:20,997] 97 werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 20:18:20] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+[2025-04-16 20:18:28,480] 74 root - INFO - predictions completed. 
+[2025-04-16 20:18:28,576] 97 werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 20:18:28] "POST /predict HTTP/1.1" 200 -
+[2025-04-16 20:22:05,388] 97 werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 20:22:05] "GET / HTTP/1.1" 200 -
+[2025-04-16 20:22:05,456] 97 werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 20:22:05] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+[2025-04-16 20:22:14,536] 74 root - INFO - predictions completed. 
+[2025-04-16 20:22:14,643] 97 werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 20:22:14] "POST /predict HTTP/1.1" 200 -
+[2025-04-16 20:22:22,111] 97 werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 20:22:22] "GET / HTTP/1.1" 200 -
+[2025-04-16 20:22:22,146] 97 werkzeug - INFO - 127.0.0.1 - - [16/Apr/2025 20:22:22] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -

@@ -1,0 +1,28 @@
+[2025-04-29 13:30:49,644] 97 werkzeug - WARNING -  * Debugger is active!
+[2025-04-29 13:30:49,648] 97 werkzeug - INFO -  * Debugger PIN: 687-007-829
+[2025-04-29 13:32:28,222] 97 werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 13:32:28] "GET / HTTP/1.1" 200 -
+[2025-04-29 13:32:28,290] 97 werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 13:32:28] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+[2025-04-29 13:32:28,868] 97 werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 13:32:28] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-04-29 13:32:37,029] 74 root - INFO - predictions completed. 
+[2025-04-29 13:32:37,094] 97 werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 13:32:37] "POST /predict HTTP/1.1" 200 -
+[2025-04-29 13:32:39,351] 97 werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 13:32:39] "GET /download_results HTTP/1.1" 200 -
+[2025-04-29 13:34:33,607] 97 werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 13:34:33] "GET / HTTP/1.1" 200 -
+[2025-04-29 13:34:33,665] 97 werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 13:34:33] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+[2025-04-29 13:34:34,966] 97 werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 13:34:34] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-04-29 13:34:43,230] 74 root - INFO - predictions completed. 
+[2025-04-29 13:34:43,304] 97 werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 13:34:43] "POST /predict HTTP/1.1" 200 -
+[2025-04-29 13:35:56,622] 97 werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 13:35:56] "GET / HTTP/1.1" 200 -
+[2025-04-29 13:35:56,751] 97 werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 13:35:56] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+[2025-04-29 13:36:08,506] 74 root - INFO - predictions completed. 
+[2025-04-29 13:36:08,567] 97 werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 13:36:08] "POST /predict HTTP/1.1" 200 -
+[2025-04-29 13:36:10,555] 97 werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 13:36:10] "GET /download_results HTTP/1.1" 200 -
+[2025-04-30 07:15:03,903] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2025 07:15:03] "GET / HTTP/1.1" 200 -
+[2025-04-30 07:15:03,950] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2025 07:15:03] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+[2025-04-30 07:15:55,266] 74 root - INFO - predictions completed. 
+[2025-04-30 07:15:55,304] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2025 07:15:55] "POST /predict HTTP/1.1" 200 -
+[2025-04-30 07:16:00,932] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2025 07:16:00] "GET /download_results HTTP/1.1" 200 -
+[2025-04-30 07:29:51,941] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2025 07:29:51] "GET / HTTP/1.1" 200 -
+[2025-04-30 07:29:51,975] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2025 07:29:51] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+[2025-04-30 14:35:24,427] 74 root - INFO - predictions completed. 
+[2025-04-30 14:35:24,494] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2025 14:35:24] "POST /predict HTTP/1.1" 200 -
+[2025-04-30 14:35:28,190] 97 werkzeug - INFO - 127.0.0.1 - - [30/Apr/2025 14:35:28] "GET /download_results HTTP/1.1" 200 -
