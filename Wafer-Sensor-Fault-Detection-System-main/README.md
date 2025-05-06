@@ -1,8 +1,5 @@
-Here is your complete, **final `README.md` file** content. You can **copy and paste this directly into VS Code** or any markdown editor for your research-based ML project:
 
----
 
-```markdown
 # 🧠 Sensor-Driven Fault Detection in Semiconductor Wafers using Automated ML Pipelines
 
 > ✅ Research-based Project | 🎓 SRM Institute of Science and Technology, Kattankulathur, Chennai  
@@ -69,7 +66,6 @@ Unlike previous studies that relied on high-cost image data and deep learning (C
    - Accuracy inflated on small test samples.  
    - Poor generalization to other wafer lines or shifts.
 
----
 
 ## 🧰 Techniques & Technologies Used
 
@@ -83,7 +79,6 @@ Unlike previous studies that relied on high-cost image data and deep learning (C
 | Evaluation       | Accuracy, ROC-AUC, F1, etc. | Multi-metric validation. |
 | Deployment       | Flask + Pickle Models       | Real-time prediction app. |
 
----
 
 ## 📂 Folder Structure
 
@@ -105,7 +100,6 @@ wafer-fault-detection-ml/
 
 ````
 
----
 
 ## 🚀 How to Run the Project
 
